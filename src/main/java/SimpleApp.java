@@ -1,7 +1,6 @@
 import org.apache.spark.api.java.function.FilterFunction;
 import org.apache.spark.sql.SparkSession;
 import org.apache.spark.sql.Dataset;
-import scala.Function1;
 
 public class SimpleApp {
     public static void main(String[] args) {
@@ -12,7 +11,7 @@ public class SimpleApp {
         long numAs = logData.filter((FilterFunction<String>) s -> s.contains("a")).count();
         long numBs = logData.filter((FilterFunction<String>) s -> s.contains("b")).count();
 
-        System.out.println("Line with a: " + numAs + ", lines with b: " + numBs);
+        System.out.println("Lines with a: " + numAs + ", lines with b: " + numBs);
 
         spark.stop();
     }
