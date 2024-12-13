@@ -9,9 +9,8 @@ public class SimpleApp {
         Dataset<String> logData = spark.read().textFile(logFile).cache();
 
         long numAs = logData.filter((FilterFunction<String>) s -> s.contains("a")).count();
-        long numBs = logData.filter((FilterFunction<String>) s -> s.contains("b")).count();
 
-        System.out.println("Lines with a: " + numAs + ", lines with b: " + numBs);
+        System.out.println("Lines with a: " + numAs);
 
         spark.stop();
     }
