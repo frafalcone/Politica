@@ -1,7 +1,6 @@
 import org.apache.spark.api.java.function.FilterFunction;
 import org.apache.spark.sql.SparkSession;
 import org.apache.spark.sql.Dataset;
-import scala.Function1;
 
 public class SimpleApp {
     public static void main(String[] args) {
