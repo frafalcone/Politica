@@ -4,7 +4,7 @@ import org.apache.spark.sql.Dataset;
 
 public class SimpleApp {
     public static void main(String[] args) {
-        String logFile = "C:/Users/franc/Desktop/Progetto Big Data/Politica/README.md"; // Should be some file on your system
+        String logFile = "C:\\Users\\angel\\OneDrive\\Desktop\\README.txt";
         SparkSession spark = SparkSession.builder().appName("Simple Application").master("local[*]").getOrCreate();
         Dataset<String> logData = spark.read().textFile(logFile).cache();
 
