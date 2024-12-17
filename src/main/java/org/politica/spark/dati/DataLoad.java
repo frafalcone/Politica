@@ -1,6 +1,6 @@
-package org.politica.dati;
+package org.politica.spark.dati;
 
-// Percorso dataset - computer di Francesco: C:\Users\franc\Desktop\Dataset
+// Percorso dataset - computer di Francesco: C:\Users\franc\Desktop\Dataset\
 // Percorso dataset - computer di Angelo:
 
 
@@ -12,7 +12,7 @@ import org.apache.spark.sql.SparkSession;
 
 public class DataLoad {
 
-    private static final String percorsoAttualeDataset = "C:\\Users\\angel\\OneDrive\\Desktop\\dataset politica\\Formatted dataset-20241217T133734Z-001\\Formatted dataset\\2020-10\\tweet_USA_1_october.csv\\";
+    private static final String percorsoAttualeDataset = "C:\\Users\\franc\\Desktop\\Dataset\\";
     private static final String file = "tweet_USA_1_october.csv";
 
     private static final String percorsoTotale = percorsoAttualeDataset+file;
