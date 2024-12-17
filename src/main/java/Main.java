@@ -1,9 +1,9 @@
 
 // Classe main del progetto
 
-import dati.DataLoad;
+import org.politica.dati.DataLoad;
 import org.apache.spark.sql.SparkSession;
-import sparkManagment.SparkManagment;
+import org.politica.sparkManagment.SparkManagment;
 
 public class Main {
     public static void main(String[] args) {

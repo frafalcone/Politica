@@ -1,4 +1,4 @@
-package sparkManagment;
+package org.politica.sparkManagment;
 
 import org.apache.spark.sql.SparkSession;
 
